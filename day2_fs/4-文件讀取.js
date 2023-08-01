@@ -7,7 +7,7 @@ fs.readFile('./流式寫入.txt', (err,data) => {
         console.log('讀取失敗');
         return;
     }
-    //由漁會輸出ASCII碼，因此用toString轉換
+    //由於會輸出ASCII碼，因此用toString轉換
     console.log(data.toString());
 });
 
