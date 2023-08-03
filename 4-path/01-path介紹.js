@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 //resolve是單純把指定的路徑連結在一起，會把最後一個帶有 '/' 的路徑當作根目錄，類似 "cd" 的效果
-
+//了解resolve，其他看看就好
 console.log(path.resolve(__dirname, './index.html'));
 
 //sep分割符
