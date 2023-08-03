@@ -1,6 +1,6 @@
 //console.log('hello node.js');
 //console.log(global);
-//console.log(globalThis === global);p
+//console.log(globalThis === global);
 
 //buffer
 //1.alloc
