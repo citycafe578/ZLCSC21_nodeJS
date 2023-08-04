@@ -7,6 +7,8 @@ const server = http.createServer((request, response) => {
     console.log(url);
     console.log(url.pathname);
     response.end('url new');
+    //輸出keyword查詢字串
+    console.log(url.searchParams.get(keyword));
 });
 
 //3.監聽端口,啟動服務
