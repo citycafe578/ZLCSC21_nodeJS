@@ -3,9 +3,10 @@ const http = require('http');
 
 //2.創建服務對象
 const server = http.createServer((request, response) => {
-    response.setHeader('content-type', 'text/html;charset=utf-8');//設置輸出文字格式
-    response.end('hello http server');//設置響應內容
-    response.end('安安');
+    let url = new URL(request.url, 'http://127.0.0.1:9000');
+    console.log(url);
+    console.log(url.pathname);
+    response.end('url new');
 });
 
 //3.監聽端口,啟動服務

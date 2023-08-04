@@ -1,0 +1,24 @@
+//1.導入http模組
+const http = require('http');
+
+//2.創建服務對象
+const server = http.createServer((request, response) => {
+    //獲取請求的方法
+    console.log(request.method);
+
+    //獲取啟動的url
+    console.log(request.url);//只包含路徑跟字符串
+
+    //獲取HTTP的協議版本
+    console.log(request.httpVersion);
+
+    //獲取HTTP的請求頭
+    console.log(request.headers);
+    //也可以指定
+    console.log(request.headers.host);
+});
+
+//3.監聽端口,啟動服務
+server.listen(9000,() =>{
+    console.log('服務啟動');
+})
